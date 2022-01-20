@@ -1,0 +1,7 @@
+<h3>Procesos</h3>
+<hr>
+<ul>
+    <li *ngFor="let proceso of procesos">
+        {{ proceso.table_source }} - {{ proceso.id_consulta | number }}
+    </li>
+</ul>

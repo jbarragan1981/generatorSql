@@ -1,0 +1,18 @@
+<h3>Generar file <small>{{ nuevo.table_source }}</small></h3>
+<hr>
+
+<form (ngSubmit)="agregar()">
+    <div width="100%">
+        <Label text="Id Consulta" >Id</Label><input type="number" placeholder="id_consulta" name="id_consulta" [(ngModel)]="nuevo.id_consulta" />
+        <Label text="Table Source" >Table Source</Label><input type="text" placeholder="table_source" name="table_source" [(ngModel)]="nuevo.table_source" />
+        <Label text="Index" >Index</Label>
+        <input type="text" placeholder="indice" name="indice" [(ngModel)]="nuevo.indice" />
+        <Label text="Update" >Update</Label><br>
+        <textarea cols="100" rows="10" placeholder="" name="campos_update" [(ngModel)]="nuevo.campos_update">
+        </textarea>
+        <br>
+        <button type="submit">
+                Generar
+        </button>
+    </div>
+</form>
